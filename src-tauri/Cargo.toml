@@ -1,5 +1,5 @@
 [package]
-name = "PrismaDB"
+name = "prisma_db"
 version = "0.0.0"
 description = "A Tauri App"
 authors = ["you"]

@@ -2,6 +2,7 @@ import { AppShell, Footer, Header, MantineProvider, Navbar } from '@mantine/core
 import { useEffect } from 'react'
 
 import AppHeader from './layouts/Header'
+import AppMenu from './layouts/Menu'
 import IntlProvider from './providers/IntlProvider'
 import { useTheme } from './store/theme'
 
@@ -18,11 +19,7 @@ function App() {
       <IntlProvider>
         <AppShell
           padding="md"
-          navbar={
-            <Navbar width={{ base: 300 }} height={500} p="xs">
-              111
-            </Navbar>
-          }
+          navbar={<AppMenu />}
           header={<AppHeader />}
           footer={
             <Footer height={60} p="xs">
